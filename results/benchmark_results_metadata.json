@@ -1,0 +1,89 @@
+{
+  "calculator_init_seconds": 1.1170050129294395e-06,
+  "cases": {
+    "three_term": {
+      "coefficients": [
+        0.25,
+        0.25,
+        -0.5
+      ],
+      "dimension": 3
+    },
+    "two_term": {
+      "coefficients": [
+        0.5,
+        -0.5
+      ],
+      "dimension": 3
+    }
+  },
+  "cold_repeats": 1,
+  "command": [
+    "benchmark_tensorpow.py"
+  ],
+  "cpu_count": 20,
+  "direct_max_n": 9,
+  "direct_memory_gib": 20.0,
+  "direct_repeats": 1,
+  "direct_warmups": 0,
+  "executable": "/home/juhaszmartin/code/tensorpow_benchmark/venv/bin/python",
+  "machine": "x86_64",
+  "max_rss_note": "ru_maxrss is converted from KiB on non-macOS systems and treated as bytes on macOS",
+  "n_values": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "numpy_configuration": "{\n  \"Compilers\": {\n    \"c\": {\n      \"name\": \"gcc\",\n      \"linker\": \"ld.bfd\",\n      \"version\": \"14.2.1\",\n      \"commands\": \"cc\"\n    },\n    \"cython\": {\n      \"name\": \"cython\",\n      \"linker\": \"cython\",\n      \"version\": \"3.2.9\",\n      \"commands\": \"cython\"\n    },\n    \"c++\": {\n      \"name\": \"gcc\",\n      \"linker\": \"ld.bfd\",\n      \"version\": \"14.2.1\",\n      \"commands\": \"c++\"\n    }\n  },\n  \"Machine Information\": {\n    \"host\": {\n      \"cpu\": \"x86_64\",\n      \"family\": \"x86_64\",\n      \"endian\": \"little\",\n      \"system\": \"linux\"\n    },\n    \"build\": {\n      \"cpu\": \"x86_64\",\n      \"family\": \"x86_64\",\n      \"endian\": \"little\",\n      \"system\": \"linux\"\n    }\n  },\n  \"Build Dependencies\": {\n    \"blas\": {\n      \"name\": \"scipy-openblas\",\n      \"found\": true,\n      \"version\": \"0.3.34.0.0\",\n      \"detection method\": \"pkgconfig\",\n      \"include directory\": \"/opt/_internal/cpython-3.13.14/lib/python3.13/site-packages/scipy_openblas64/include\",\n      \"lib directory\": \"/opt/_internal/cpython-3.13.14/lib/python3.13/site-packages/scipy_openblas64/lib\",\n      \"openblas configuration\": \"OpenBLAS 0.3.34.0.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64\",\n      \"pc file directory\": \"/project/.openblas\"\n    },\n    \"lapack\": {\n      \"name\": \"scipy-openblas\",\n      \"found\": true,\n      \"version\": \"0.3.34.0.0\",\n      \"detection method\": \"pkgconfig\",\n      \"include directory\": \"/opt/_internal/cpython-3.13.14/lib/python3.13/site-packages/scipy_openblas64/include\",\n      \"lib directory\": \"/opt/_internal/cpython-3.13.14/lib/python3.13/site-packages/scipy_openblas64/lib\",\n      \"openblas configuration\": \"OpenBLAS 0.3.34.0.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64\",\n      \"pc file directory\": \"/project/.openblas\"\n    }\n  },\n  \"Python Information\": {\n    \"path\": \"/tmp/build-env-odhcdjhd/bin/python\",\n    \"version\": \"3.13\"\n  },\n  \"SIMD Extensions\": {\n    \"baseline\": [\n      \"X86_V2\"\n    ],\n    \"found\": [\n      \"X86_V3\"\n    ],\n    \"not found\": [\n      \"X86_V4\",\n      \"AVX512_ICL\",\n      \"AVX512_SPR\"\n    ]\n  }\n}\n",
+  "output_files": {
+    "matrices_npz": "/home/juhaszmartin/code/tensorpow_benchmark/results/benchmark_results_matrices.npz",
+    "raw_csv": "/home/juhaszmartin/code/tensorpow_benchmark/results/benchmark_results_raw.csv",
+    "summary_json": "/home/juhaszmartin/code/tensorpow_benchmark/results/benchmark_results_summary.json"
+  },
+  "platform": "Linux-7.1.6-1-cachyos-x86_64-with-glibc2.44",
+  "processor": "",
+  "python": "3.13.14 | packaged by Anaconda, Inc. | (main, Jul  9 2026, 14:36:31) [GCC 14.3.0]",
+  "repeats": 3,
+  "seed": 20260729,
+  "thread_environment": {
+    "BLIS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "timestamp_utc": "2026-08-12T12:04:44Z",
+  "versions": {
+    "numpy": "2.5.2",
+    "scipy": "1.18.0",
+    "tensorpow": "0.3.0"
+  },
+  "warmups": 1
+}
